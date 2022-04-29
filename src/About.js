@@ -5,27 +5,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import DownloadIcon from "@mui/icons-material/Download";
-import InstagramIcon from "@mui/icons-material/Instagram";
-
+import LinkIcon from "@mui/icons-material/Link";
 const About = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-
-  const TechnologyCard = ()=>{
-    return(<div className="col-sm-12 col-md-6 col-lg-3 p-2" >
-    <div style={{backgroundColor:"white",borderRadius:10,padding:"5px",alignItems:"center",display:"flex",justifyContent:"center",flexDirection:"column"}}>
-    <img
-      className="mx-ato"
-      src={require("./assets/images/back.jpg")}
-      style={{ height: "40vh",width:"100%",borderRadius:15 }}
-    />
-    <span>BillShare</span>
-    <div>
-      languages
-    </div>
-    <span style={{textAlign:"center"}}>Generate Invoice (pdf format) and share it via whatsapp,gmail other sharable media</span>
-    </div>
-  </div>);
-  }
 
   return (
     <>
@@ -36,7 +18,8 @@ const About = () => {
             src={require("./assets/images/route.png")}
             width
             style={{ height: "40px" }}
-          /><span style={{left:-"-8px",position:"relative"}}>eyur</span>
+          />
+          <span style={{ left: -"-8px", position: "relative" }}>eyur</span>
         </div>
         <button
           className="hamburger"
@@ -141,11 +124,11 @@ const About = () => {
               className="mx-ato"
               src={require("./assets/images/npm.png")}
               style={{ height: "20px", width: "35px" }}
-            />{" "}
+            />
           </a>
         </div>
         <a
-          download={require("./assets/images/back.jpg")}
+          href="https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/Circular_Exam_Form_112934.pdf"
           style={{
             border: "1px solid white",
             borderRadius: 15,
@@ -155,26 +138,675 @@ const About = () => {
             padding: "5px",
             paddingRight: "10px",
             paddingLeft: "10px",
-            marginTop:"5px"
+            marginTop: "5px",
+            textDecoration: "none",
           }}
         >
           <DownloadIcon style={{ marginRight: "5px" }} />
           Resume
         </a>
       </div>
-      <div id="technology" style={{}} >
-        <div style={{textAlign:"center",fontSize:30,color:"white"}}>Technology</div>
-        <div style={{ display:"flex",flexDirection:"row",flexWrap:"wrap" }}>
-        <TechnologyCard/>
-        <TechnologyCard/>
-        <TechnologyCard/>
-        <TechnologyCard/>
+      <div id="technology" style={{ paddingLeft: "5vw", paddingRight: "5vw" }}>
+        <div
+          style={{
+            textAlign: "center",
+            fontSize: 35,
+            color: "white",
+            fontWeight: "bold",
+          }}
+        >
+          Technology
+        </div>
+        <div
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+        >
+          <div className="col-sm-12 col-md-6 col-lg-3 p-2">
+            <div
+              style={{
+                backgroundColor: "white",
+                borderRadius: 10,
+                padding: "5px",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <span style={{ fontSize: 28, fontWeight: "bold" }}>
+                Languages
+              </span>
+
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/c.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/java.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                </div>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/c++.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/python.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                </div>
+              </div>
+              <span style={{ textAlign: "center" }}>
+                My favorite languages for systems programming, software
+                engineering, and data analysis.
+              </span>
+            </div>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-3 p-2">
+            <div
+              style={{
+                backgroundColor: "white",
+                borderRadius: 10,
+                padding: "5px",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <span style={{ fontSize: 28, fontWeight: "bold" }}>
+                Front-End
+              </span>
+
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/html.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/css.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                </div>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/bootstrap.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/react.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                </div>
+              </div>
+              <span style={{ textAlign: "center" }}>
+                My preferred technologies for front-end web development and
+                component design.
+              </span>
+            </div>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-3 p-2">
+            <div
+              style={{
+                backgroundColor: "white",
+                borderRadius: 10,
+                padding: "5px",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <span style={{ fontSize: 28, fontWeight: "bold" }}>Back-End</span>
+
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/mongodb.webp")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/firebase.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                </div>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/node.webp")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/python.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                </div>
+              </div>
+              <span style={{ textAlign: "center" }}>
+                My preferred technologies for back-end web programming and
+                database architecture.
+              </span>
+            </div>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-3 p-2">
+            <div
+              style={{
+                backgroundColor: "white",
+                borderRadius: 10,
+                padding: "5px",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <span style={{ fontSize: 28, fontWeight: "bold" }}>Tools</span>
+
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/git.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/github.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                </div>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/vscode.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                  <img
+                    className="mx-ato"
+                    src={require("./assets/images/androidstudio.png")}
+                    style={{ height: "70px", width: "70px", margin: 10 }}
+                  />
+                </div>
+              </div>
+              <span style={{ textAlign: "center" }}>
+                My favorite tools for version control, code editing, and
+                container orchestration.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="projects"
+        style={{
+          paddingLeft: "5vw",
+          paddingRight: "5vw",
+          display: "flex",
+          flexDirection: "column",
+          marginTop: "5vh",
+        }}
+      >
+        <div
+          style={{
+            textAlign: "center",
+            fontSize: 35,
+            color: "white",
+            fontWeight: "bold",
+          }}
+        >
+          Featured Projects
+        </div>
+        <div
+          style={{
+            backgroundColor: "white",
+            borderRadius: 10,
+            display: "flex",
+            padding: "5px",
+            flexDirection: "column",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+            marginBottom: "15px",
+            marginTop: "15px",
+          }}
+        >
+          <span style={{ fontSize: 30, fontWeight: "bold" }}>BillShare</span>
+          <div
+            style={{
+              display: "flex",
+              padding: "5px",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              alignItems: "center",
+              display: "flex",
+            }}
+          >
+            <div
+              className="col-sm-12 col-md-4 col-lg-3 p-2"
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+              }}
+            >
+              <img
+                className="mx-ato"
+                src={require("./assets/images/billshare.png")}
+                style={{
+                  height: "200px",
+                  width: "200px",
+                  borderRadius: 15,
+                  padding: 5,
+                }}
+              />
+            </div>
+
+            <div
+              className="col-sm-12 col-md-8 col-lg-9 p-2"
+              style={{ display: "flex", flexDirection: "column" }}
+            >
+              <div
+                style={{
+                  textAlign: "left",
+                  fontSize: 18,
+                  flexDirection: "row",
+                }}
+              >
+                <span style={{ fontWeight: "bold" }}>Technologies :</span>
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/react.png")}
+                  style={{ height: "40px", width: "40px", margin: 10 }}
+                />
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/firebase.png")}
+                  style={{ height: "40px", width: "40px", margin: 10 }}
+                />
+              </div>
+              <span style={{ textAlign: "left", fontSize: 18 }}>
+                BookMyBook is application for collage engineering students who
+                can buy or sell engineering books at law price from their senior
+                or junior.
+              </span>
+              <div>
+                <a
+                  style={{ textDecoration: "none", fontSize: 20 }}
+                  href="https://play.google.com/store/apps/details?id=com.billshare"
+                >
+                  <LinkIcon />
+                  Download Application
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
-      </div>
-      <div id="projects" style={{ height: "100vh" }}>
-        <div className="col-sm-12 col-md-6 col-lg-3 my-2" style={{backgroundColor:"white"}}>
+        <div
+          style={{
+            backgroundColor: "white",
+            borderRadius: 10,
+            display: "flex",
+            padding: "5px",
+            flexDirection: "column",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+            marginBottom: "15px",
+            marginTop: "15px",
+          }}
+        >
+          <span style={{ fontSize: 30, fontWeight: "bold" }}>BookMyBook</span>
+          <div
+            style={{
+              display: "flex",
+              padding: "5px",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              alignItems: "center",
+              display: "flex",
+            }}
+          >
+            <div
+              className="col-sm-12 col-md-4 col-lg-3 p-2"
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+              }}
+            >
+              <img
+                className="mx-ato"
+                src={require("./assets/images/bookmybook.png")}
+                style={{
+                  height: "200px",
+                  width: "200px",
+                  borderRadius: 15,
+                  padding: 5,
+                }}
+              />
+            </div>
+
+            <div
+              className="col-sm-12 col-md-8 col-lg-9 p-2"
+              style={{ display: "flex", flexDirection: "column" }}
+            >
+              <div
+                style={{
+                  textAlign: "left",
+                  fontSize: 18,
+                  flexDirection: "row",
+                }}
+              >
+                <span style={{ fontWeight: "bold" }}>Technologies :</span>
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/react.png")}
+                  style={{ height: "40px", width: "40px", margin: 10 }}
+                />
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/firebase.png")}
+                  style={{ height: "40px", width: "40px", margin: 10 }}
+                />
+              </div>
+              <span style={{ textAlign: "left", fontSize: 18 }}>
+                BookMyBook is application for collage engineering students who
+                can buy or sell engineering books at law price from their senior
+                or junior.
+              </span>
+              <div>
+                <a
+                  style={{ textDecoration: "none", fontSize: 20 }}
+                  href="https://play.google.com/store/apps/details?id=com.bookmybook"
+                >
+                  <LinkIcon />
+                  Download Application
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "row",flexWrap:"wrap" }}>
+          <div className="col-sm-12 col-md-6 col-lg-6 p-2">
+            <div
+              style={{
+                backgroundColor: "white",
+                borderRadius: 10,
+                padding: "10px",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <span style={{ fontSize: 28, fontWeight: "bold" }}>
+                Updates2k21
+              </span>
+              <div
+                style={{
+                  textAlign: "left",
+                  fontSize: 18,
+                  flexDirection: "row",
+                }}
+              >
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/react.png")}
+                  style={{ height: "40px", width: "40px", margin: 10 }}
+                />
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/mongodb.webp")}
+                  style={{ height: "40px", width: "40px", margin: 10 }}
+                />
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/html.png")}
+                  style={{ height: "40px", width: "40px", margin: 10 }}
+                />
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/css.png")}
+                  style={{ height: "40px", width: "40px", margin: 10 }}
+                />
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/bootstrap.png")}
+                  style={{ height: "40px", width: "40px", margin: 10 }}
+                />
+              </div>
+              <div>
+                <span
+                  style={{
+                    alignItems: "flex-start",
+                    fontWeight: "bold",
+                    display: "flex",
+                    fontSize: 20,
+                  }}
+                >
+                  Description :
+                </span>
+                <span style={{ textAlign: "center", fontSize: 18 }}>
+                  Event Registration website for collage techfest
+                </span>
+                <span
+                  style={{
+                    alignItems: "flex-start",
+                    fontWeight: "bold",
+                    display: "flex",
+                    fontSize: 20,
+                  }}
+                >
+                  Link :
+                </span>
+                <a
+                  href="https://updates2k21.co.in/"
+                  target="_blank"
+                  style={{ textAlign: "center", fontSize: 18 }}
+                >
+                  https://updates2k21.co.in/
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-sm-12 col-md-6 col-lg-6 p-2">
+            <div
+              style={{
+                backgroundColor: "white",
+                borderRadius: 10,
+                padding: "10px",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <span style={{ fontSize: 28, fontWeight: "bold" }}>
+                Exuberence2k21
+              </span>
+              <div
+                style={{
+                  textAlign: "left",
+                  fontSize: 18,
+                  flexDirection: "row",
+                }}
+              >
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/html.png")}
+                  style={{ height: "40px", width: "40px", margin: 10 }}
+                />
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/css.png")}
+                  style={{ height: "40px", width: "40px", margin: 10 }}
+                />
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/bootstrap.png")}
+                  style={{ height: "40px", width: "40px", margin: 10 }}
+                />
+                <img
+                  className="mx-ato"
+                  src={require("./assets/images/js.png")}
+                  style={{ height: "40px", width: "60px", margin: 10 }}
+                />
+              </div>
+              <div>
+                <span
+                  style={{
+                    alignItems: "flex-start",
+                    fontWeight: "bold",
+                    display: "flex",
+                    fontSize: 20,
+                  }}
+                >
+                  Description :
+                </span>
+                <span style={{ textAlign: "center", fontSize: 18 }}>
+                  Techfest website for event's Information and Registration
+                </span>
+                <span
+                  style={{
+                    alignItems: "flex-start",
+                    fontWeight: "bold",
+                    display: "flex",
+                    fontSize: 20,
+                  }}
+                >
+                  Link :
+                </span>
+                <a
+                  href="https://exuberance2k21.github.io/site/"
+                  target="_blank"
+                  style={{ textAlign: "center", fontSize: 18 }}
+                >
+                  https://exuberance2k21.github.io/site/
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            backgroundColor: "white",
+            borderRadius: 10,
+            display: "flex",
+            padding: "5px",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+            marginBottom: "15px",
+            marginTop: "15px",
+          }}
+        >
           keyur
+          {/* <div className="col-sm-12 col-md-6 col-lg-4 p-2">
+            <div
+              style={{
+                backgroundColor: "white",
+                borderRadius: 10,
+                padding: "5px",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <span style={{ fontSize: 28, fontWeight: "bold" }}>
+                BillShare
+              </span>
+              <img
+                className="mx-ato"
+                src={require("./assets/images/billshare.png")}
+                style={{
+                  height: "25vh",
+                  width: "25vh",
+                  borderRadius: 15,
+                  padding: 5,
+                }}
+              />
+
+              <span style={{ textAlign: "center", fontSize: 18 }}>
+                BillShare is a bill-making app designed for shops and small
+                businesses looking for a digital billing solution.You can share
+                bill via whatsapp or other media in pdf form.
+              </span>
+              <div onClick={()=>{console.log("click");}} style={{border:"1px solid black",borderRadius:10,paddingLeft:"15px",paddingRight:"10px",paddingTop:"5px",paddingBottom:"5px",margin:"5px"}}><span>Read More</span><ArrowForwardIcon/></div>
+            </div>
+          </div>
+          
+          <div className="col-sm-12 col-md-6 col-lg-4 p-2">
+            <div
+              style={{
+                backgroundColor: "white",
+                borderRadius: 10,
+                padding: "5px",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <span style={{ fontSize: 28, fontWeight: "bold" }}>
+                BookMyBook
+              </span>
+              <img
+                className="mx-ato"
+                src={require("./assets/images/bookmybook.png")}
+                style={{
+                  height: "25vh",
+                  width: "25vh",
+                  borderRadius: 15,
+                  padding: 5,
+                }}
+              />
+
+              <span style={{ textAlign: "center", fontSize: 18 }}>
+              BookMyBook is application for collage engineering students who can buy or sell engineering books at law price from their senior or junior.
+              </span>
+              <div onClick={()=>{console.log("click");}} style={{border:"1px solid black",borderRadius:10,paddingLeft:"15px",paddingRight:"10px",paddingTop:"5px",paddingBottom:"5px",margin:"5px"}}><span>Read More</span><ArrowForwardIcon/></div>
+            </div>
+          </div> */}
+        </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          paddingTop: "5px",
+          paddingBottom: "5px",
+          backgroundColor: "white",
+          justifyContent: "center",
+          display: "flex",
+        }}
+      >
+        <div style={{ fontSize: 20 }}>
+          &#169; Keyur Kakadiya , {new Date().getFullYear()}
         </div>
       </div>
     </>

@@ -37,7 +37,7 @@ const App = () => {
     );
   };
 
-  return <div style={{}}>{loaded ? <About /> : <Loader />}</div>;
+  return (<div style={{}}>{loaded ? <About /> : <Loader />}</div>);
 };
 
 export default App;
