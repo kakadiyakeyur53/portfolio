@@ -6,6 +6,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import DownloadIcon from "@mui/icons-material/Download";
 import LinkIcon from "@mui/icons-material/Link";
+import MailIcon from "@mui/icons-material/Mail";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import CallIcon from "@mui/icons-material/Call";
+
 const About = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
@@ -128,7 +132,9 @@ const About = () => {
           </a>
         </div>
         <a
-          href="https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/uploads/Circular_Exam_Form_112934.pdf"
+          download="your_cv.pdf"
+          //put the path of your pdf file
+          href={require("./assets/pdf/resume.pdf")}
           style={{
             border: "1px solid white",
             borderRadius: 15,
@@ -546,7 +552,9 @@ const About = () => {
           </div>
         </div>
 
-        <div style={{ display: "flex", flexDirection: "row",flexWrap:"wrap" }}>
+        <div
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+        >
           <div className="col-sm-12 col-md-6 col-lg-6 p-2">
             <div
               style={{
@@ -711,87 +719,42 @@ const About = () => {
 
         <div
           style={{
+            textAlign: "center",
+            fontSize: 35,
+            color: "white",
+            fontWeight: "bold",
+          }}
+        >
+          Contact Information
+        </div>
+
+        <div
+          id="contact"
+          style={{
             backgroundColor: "white",
             borderRadius: 10,
             display: "flex",
-            padding: "5px",
+            padding: "10px",
             flexDirection: "row",
             flexWrap: "wrap",
-            justifyContent: "center",
+            justifyContent: "space-between",
             alignItems: "center",
             display: "flex",
             marginBottom: "15px",
             marginTop: "15px",
           }}
         >
-          keyur
-          {/* <div className="col-sm-12 col-md-6 col-lg-4 p-2">
-            <div
-              style={{
-                backgroundColor: "white",
-                borderRadius: 10,
-                padding: "5px",
-                alignItems: "center",
-                display: "flex",
-                justifyContent: "center",
-                flexDirection: "column",
-              }}
-            >
-              <span style={{ fontSize: 28, fontWeight: "bold" }}>
-                BillShare
-              </span>
-              <img
-                className="mx-ato"
-                src={require("./assets/images/billshare.png")}
-                style={{
-                  height: "25vh",
-                  width: "25vh",
-                  borderRadius: 15,
-                  padding: 5,
-                }}
-              />
-
-              <span style={{ textAlign: "center", fontSize: 18 }}>
-                BillShare is a bill-making app designed for shops and small
-                businesses looking for a digital billing solution.You can share
-                bill via whatsapp or other media in pdf form.
-              </span>
-              <div onClick={()=>{console.log("click");}} style={{border:"1px solid black",borderRadius:10,paddingLeft:"15px",paddingRight:"10px",paddingTop:"5px",paddingBottom:"5px",margin:"5px"}}><span>Read More</span><ArrowForwardIcon/></div>
-            </div>
-          </div>
-          
-          <div className="col-sm-12 col-md-6 col-lg-4 p-2">
-            <div
-              style={{
-                backgroundColor: "white",
-                borderRadius: 10,
-                padding: "5px",
-                alignItems: "center",
-                display: "flex",
-                justifyContent: "center",
-                flexDirection: "column",
-              }}
-            >
-              <span style={{ fontSize: 28, fontWeight: "bold" }}>
-                BookMyBook
-              </span>
-              <img
-                className="mx-ato"
-                src={require("./assets/images/bookmybook.png")}
-                style={{
-                  height: "25vh",
-                  width: "25vh",
-                  borderRadius: 15,
-                  padding: 5,
-                }}
-              />
-
-              <span style={{ textAlign: "center", fontSize: 18 }}>
-              BookMyBook is application for collage engineering students who can buy or sell engineering books at law price from their senior or junior.
-              </span>
-              <div onClick={()=>{console.log("click");}} style={{border:"1px solid black",borderRadius:10,paddingLeft:"15px",paddingRight:"10px",paddingTop:"5px",paddingBottom:"5px",margin:"5px"}}><span>Read More</span><ArrowForwardIcon/></div>
-            </div>
-          </div> */}
+          <a href="tel:8238020140" style={{color:"black",textDecoration:"none"}} >
+            <CallIcon style={{marginRight:"5px"}}/>
+            (+91) 82380 20140
+          </a>
+          <a href="mailto:kakadiyakeyur53@gmail.com" style={{color:"black",textDecoration:"none"}} >            <MailIcon style={{marginRight:"5px"}}/>
+            kakadiyakeyur53@gmail.com
+          </a>
+          <a>
+            <LocationOnIcon style={{marginRight:"5px"}}/>
+            Surat,Gujarat,India
+          </a>
         </div>
       </div>
       <div
